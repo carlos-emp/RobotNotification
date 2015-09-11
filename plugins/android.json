@@ -41,11 +41,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<permission android:name=\"com.phonegap.helloworld.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "xml": "<permission android:name=\"com.push.notif.app.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
                             "count": 1
                         },
                         {
-                            "xml": "<uses-permission android:name=\"com.phonegap.helloworld.permission.C2D_MESSAGE\" />",
+                            "xml": "<uses-permission android:name=\"com.push.notif.app.permission.C2D_MESSAGE\" />",
                             "count": 1
                         },
                         {
@@ -55,7 +55,7 @@
                     ],
                     "/manifest/application": [
                         {
-                            "xml": "<receiver android:name=\"com.pushbots.google.gcm.GCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.phonegap.helloworld\" /></intent-filter></receiver>",
+                            "xml": "<receiver android:name=\"com.pushbots.google.gcm.GCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.push.notif.app\" /></intent-filter></receiver>",
                             "count": 1
                         },
                         {
@@ -73,7 +73,7 @@
                     ],
                     "/*/application/activity": [
                         {
-                            "xml": "<intent-filter><action android:name=\"com.phonegap.helloworld.MESSAGE\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                            "xml": "<intent-filter><action android:name=\"com.push.notif.app.MESSAGE\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
                             "count": 1
                         }
                     ]
@@ -83,15 +83,15 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.push.notif.app"
         },
         "com.pushbots.push": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.push.notif.app"
         }
     },
     "dependent_plugins": {
         "android.support.v4": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.push.notif.app"
         }
     }
 }
